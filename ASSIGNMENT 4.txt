@@ -4,6 +4,24 @@ file=open('sample.txt','r')
 reding_file = file.read()
 print(reding_file)
 
+
+
+Handles errors gracefully if the file does not exist.
+
+
+file_path = 'file.txt'
+
+if os.path.exists(file_path):
+    with open(file_path, 'r') as file:
+        # File operations here
+        content = file.read()
+        print(content)
+else:
+    print("File not found.")
+
+
+
+
 #Task 2: Write and Append Data to a File
 file=open('sample.txt','w')
 reding_file = file.write(input())
@@ -16,3 +34,7 @@ print(reding_file)
 file=open('sample.txt','r')
 reding_file = file.read()
 print(reding_file)
+
+
+
+
