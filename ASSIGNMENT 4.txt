@@ -9,15 +9,15 @@ print(reding_file)
 Handles errors gracefully if the file does not exist.
 
 
-file_path = 'file.txt'
+try:
+    file1=open('sample1.txt','r')
+    Reding_file=file1.read()
+    print(Reding_file)
+except FileNotFoundError:
+    print('error file path is wrong')
+finally:
+    print('continue with the following code')
 
-if os.path.exists(file_path):
-    with open(file_path, 'r') as file:
-        # File operations here
-        content = file.read()
-        print(content)
-else:
-    print("File not found.")
 
 
 
