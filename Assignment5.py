@@ -1,4 +1,4 @@
-Task 1:
+#Task 1:
 
 stu1={'Ram':480,'sham':450,'Amit':280,'Vikram':410}
 name = input("enter student name :")
@@ -10,7 +10,7 @@ else:
  print('Student is not found')
 
 
-Task 2: Demonstrate List Slicing 
+#Task 2: Demonstrate List Slicing 
 
 
 
